@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <script src="js/calc.js"></script>
+</head>
+<body>
+    <h1>Welcome To Calculator Web APP </h1>
+    <label for="number1">Enter First number : </label>
+    <input type="number" id="number1" name="firstnum">
+
+    <label for="number2">Enter Second number : </label>
+    <input type="number" id="number2" name="secondnum"> <br> <br>
+
+    <p>Add: <span id="add">0</span></p>
+    <p>Sub: <span id="sub">0</span></p>
+    <p>Mul: <span id="mul">0</span></p>
+    <p>Div: <span id="div">0</span></p>
+
+
+    <input type="button" value="add" onclick="calculation('+')">
+    <input type="button" value="sub" onclick="calculation('-')">
+    <input type="button" value="mul" onclick="calculation('*')">
+    <input type="button" value="div" onclick="calculation('/')">
+</body>
+</html>

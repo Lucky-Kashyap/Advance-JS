@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Width GEt using JS</title>
+</head>
+<body>
+    <h1>Image widtgh Get and height using JS</h1>
+    <!-- <img src="http://www.google.com/intl/en_ALL/images/logo.gif" height="90" width="115" id="img_id" alt=""> -->
+
+
+    <script>
+
+        var image = new Image();
+
+       
+
+        image.onload = function() {
+  alert(this.width + 'x' + this.height);
+}
+
+image.src = "http://www.google.com/intl/en_ALL/images/logo.gif";
+
+document.body.appendChild(image);
+//         var img = document.getElementById('imageid'); 
+
+// var get = img.clientWidth;
+// console.log(get);
+//         var width = img.clientWidth;
+// var height = img.clientHeight;
+
+// console.log(width);
+// console.log(height);
+
+// document.write(width);
+// document.writeln(height);
+    </script>
+</body>
+</html>
